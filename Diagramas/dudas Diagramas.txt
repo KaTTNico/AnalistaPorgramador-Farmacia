@@ -1,0 +1,4 @@
+MER:
+1)como se representa una primary key compuesta? como represento la primary key de medicamentos
+2)en la entidad horas extra que primary key tiene que tener?
+3)cuales son las RNE que me faltan?
