@@ -2,3 +2,6 @@ MER:
 1)como se representa una primary key compuesta? como represento la primary key de medicamentos
 2)en la entidad horas extra que primary key tiene que tener?
 3)cuales son las RNE que me faltan?
+
+Modelo conceptual:
+1)en la entidad usuarios el documento es int long o strging?
