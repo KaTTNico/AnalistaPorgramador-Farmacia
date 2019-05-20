@@ -1,0 +1,3 @@
+dudas:
+1)en el objeto empleado como pongo las horas extra? como un objeto nuevo y una agregacion como atributo ? o simplemente
+un int con minutos?
