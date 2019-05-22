@@ -31,7 +31,7 @@ namespace EntidadesCompartidas
                 if (value.Length <= 15 && value.Length >= 5)
                     user = value.Trim().ToUpper();
                 else
-                    throw new Exception("El nombre debe tener entre 5 y 15 caracteres.");
+                    throw new Exception("El nombre de usuario del usuario debe tener entre 5 y 15 caracteres.");
             }
         }
 
@@ -57,7 +57,7 @@ namespace EntidadesCompartidas
                 if (value.Length <= 25 && value.Length >= 5)
                     nombre = value;
                 else
-                    throw new Exception("El nombre debe tener entre 5 y 25 caracteres.");
+                    throw new Exception("El nombre del usuario debe tener entre 5 y 25 caracteres.");
             }
         }
 

@@ -24,7 +24,7 @@ namespace EntidadesCompartidas
                 if (value.Length >= 5 && value.Length <= 50)
                     nombre = value;
                 else
-                    throw new Exception("El nombre debe tener entre 5 y 50 caracteres.");
+                    throw new Exception("El nombre de la farmaceutica debe tener entre 5 y 50 caracteres.");
             }
         }
 
@@ -37,7 +37,7 @@ namespace EntidadesCompartidas
                 if (value.Length >= 10 && value.Length <= 100)
                     direccionFiscal = value;
                 else
-                    throw new Exception("La direccion debe tener entre 10 y 100 caracteres.");
+                    throw new Exception("La direccion de la farmaceutica debe tener entre 10 y 100 caracteres.");
             }
         }
 
@@ -50,7 +50,7 @@ namespace EntidadesCompartidas
                 if (value.Length == 7)
                     telefono = value;
                 else
-                    throw new Exception("El telefono debe estar compuesto por 7 caracteres.");
+                    throw new Exception("El telefono de la farmaceutica debe estar compuesto por 7 caracteres.");
             }
         }
 
@@ -63,7 +63,7 @@ namespace EntidadesCompartidas
                 if (value.Length >= 7 && value.Length <= 25)
                     correoElectronico = value;
                 else
-                    throw new Exception("El correo electronico debe tener entre 7 y 25 caracteres.");
+                    throw new Exception("El correo electronico de la farmaceutica debe tener entre 7 y 25 caracteres.");
             }
         }
 

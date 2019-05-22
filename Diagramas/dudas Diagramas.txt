@@ -4,4 +4,8 @@ MER:
 3)cuales son las RNE que me faltan?
 
 Modelo conceptual:
-1)en la entidad usuarios el documento es int long o strging?
+1)en la entidad usuarios el documento es int long o string?
+
+
+COMENTARIOS:le cambie el tipo de dato al codigo del medicamento ahora es int, actualizar todos los diagramas que 
+lleven tipo de dato de medicamento

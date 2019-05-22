@@ -70,13 +70,14 @@ correoElectronico varchar(25) not null
 go
 
 create table medicamento(
-codigo varchar(50) primary key,
+codigo int not null,
 nombreFarmaceutica foreign key references farmaceutica(nombre) not null,
 nombre varchar(8) not null,
 descripcion varchar(100) not null,
 precio money not null,
-tipo varchar(13) not null check(UPPER(tipo)='CARDIOLOGICO' or UPPER(tipo)='DIABETICOS' or UPPER(tipo)='OTROS'),
-stock int not null
+tipo varchar(13) not null check(UPPER(tipo)='CARDIOLOGICO' or UPPER(tipo)='DIABETICO' or UPPER(tipo)='OTRO'),
+stock int not null,
+primary key (codigo,nombreFarmaceutica)
 );
 go
 
@@ -90,6 +91,6 @@ go
 
 create table medicamentosPedido(
 numeroPedido int foreign key references pedido(numero) not null,
-codigoMedicamento varchar(50) foreign key references medicamento(codigo) not null,
+codigoMedicamento int foreign key references medicamento(codigo) not null,
 cantidad int not null
 );

@@ -11,6 +11,7 @@ namespace EntidadesCompartidas
         //atributos
         private string horaInicio;
         private string horaFin;
+        private HorasExtra tiempoExtra;
 
         //propiedades 
         public string HoraInicio
@@ -25,14 +26,21 @@ namespace EntidadesCompartidas
             set { horaFin = value; }
         }
 
+        public HorasExtra TiempoExtra
+        {
+            get { return tiempoExtra; }
+            set { tiempoExtra = value; }
+        }
+
         //constructores 
         public Empleado() : base() { }
 
-        public Empleado(int _documento, string _user, string _password, string _nombre, string _horaInicio, string _horaFin)
+        public Empleado(int _documento, string _user, string _password, string _nombre, string _horaInicio, string _horaFin, HorasExtra _tiempoExtra)
             : base(_documento, _user, _password, _nombre)
         {
             HoraInicio = _horaInicio;
             HoraFin = _horaFin;
+            TiempoExtra = _tiempoExtra;
         }
     }
 }
